@@ -6,21 +6,40 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:text="Peso (Kg)"/>
+
+    <EditText
+        android:id="@+id/peso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altura (m)"/>
+
+    <EditText
+        android:id="@+id/altura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Hello World!"/>
+        android:onClick="calcularIMC"
+        android:text="Calcular IMC" />
 
-    <Button
+    <TextView
+        android:id="@+id/imc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:text="Hello World!"/>
+        android:layout_gravity="center"
+        android:text=""/>
 
 </android.support.v7.widget.LinearLayoutCompat>
